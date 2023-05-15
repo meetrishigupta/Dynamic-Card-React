@@ -134,7 +134,7 @@ input::-webkit-inner-spin-button {
   top: -27px;
   left: -20px;
   text-align: left;
-  font-family: Raleway;
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 17px;
 }
@@ -227,4 +227,7 @@ input::-webkit-inner-spin-button {
   top: 50px;
   width: 44px;
   height: 44px;
+}
+.keyDetails{
+  margin-top: 20px;
 }
