@@ -6,71 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dynamic Card using React</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
-    <div class="main-wrapper">
-      <h1>Dynamic Card Using React</h1>
-      <div class="form-wrapper">
-        <div class="card-wrapper">
-          <div class="card1">
-            <p class="platinum">Platinum</p>
-            <img id="chip-card" src="chip-card.svg" />
-            <img id="wireless" src="wireless.svg" />
-            <span class="name">YOUR NAME</span>
-            <p class="card-number-text">--- ---- ---- ----</p>
-            <div>
-              <p class="valid">VALID <br />THRU</p>
-              <p class="valid-year">12/25</p>
-              <p class="visa">VISA</p>
-            </div>
-          </div>
-          <div class="card2">
-            <div class="strip"></div>
-            <div class="cvv-strip">
-                <hr></hr>
-                    <hr></hr>
-                        <hr></hr>
-                        <p>123</p>
-            </div>
-            <img src="secure.svg" />
-          </div>
-        </div>
-        <form>
-          <input
-            id="card-number"
-            type="number"
-              onKeyPress="if(this.value.length==16) return false;"
-            placeholder="CARD NUMBER"
-          />
-          <input
-            id="card-name"
-            type="text"
-            maxlength="26"
-            placeholder="CARD HOLDER"
-          />
-          <div class="column-three">
-            <input
-              type="number"
-              onKeyPress="if(this.value.length==2) return false;"
-              placeholder="EXPIRE MONTH"
-            />
-            <input
-              type="number"
-              onKeyPress="if(this.value.length==4) return false;"
-              maxlength="4"
-              placeholder="EXPIRE YEAR"
-            />
-            <input
-              type="number"
-              onKeyPress="if(this.value.length==3) return false;"
-              maxlength="3"
-              placeholder="CVV"
-            />
-          </div>
-          <button type="submit">SUBMIT</button>
-        </form>
-      </div>
-    </div>
+    <div id="root"></div>
     <script src="script.jsx" type="text/babel"></script>
   </body>
 </html>
