@@ -14,8 +14,11 @@ const handleNumber = (e) => {
 };
 const handleName = (e) => {
   const inputValue = e.target.value;
-  const alphabeticValue = inputValue.replace(/[^A-Za-z ]/g, "");
+  const alphabeticValue = inputValue.replace(/[^A-Za-z ]/g, ""); // Remove non-alphabetic characters
   cholder = alphabeticValue.slice(0, 20).toUpperCase();
+  if (/\d/.test(inputValue)) {
+    alert("Please enter only alphabetic characters A - Z");
+  }
   creactElement.render(<App />);
 };
 const handleMonth = (e) => {
@@ -69,12 +72,12 @@ const App = () => {
               <svg width="95" height="103" viewBox="0 0 95 103" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_1_108)">
                   <g filter="url(#filter1_d_1_108)">
-                    <path d="M60.5 27L44 34.3333V45.3333C44 55.5083 51.04 65.0233 60.5 67.3333C69.96 65.0233 77 55.5083 77 45.3333V34.3333L60.5 27Z" fill="url(#paint0_radial_1_108)" shape-rendering="crispEdges" />
+                    <path d="M60.5 27L44 34.3333V45.3333C44 55.5083 51.04 65.0233 60.5 67.3333C69.96 65.0233 77 55.5083 77 45.3333V34.3333L60.5 27Z" fill="white" />
                   </g>
                 </g>
                 <defs>
-                  <filter id="filter0_d_1_108" x="0" y="0" width="95" height="102.333" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <filter id="filter0_d_1_108" x="0" y="0" width="95" height="102.333" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                     <feOffset dx="-13" dy="4" />
                     <feGaussianBlur stdDeviation="15.5" />
@@ -83,8 +86,8 @@ const App = () => {
                     <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_108" />
                     <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_108" result="shape" />
                   </filter>
-                  <filter id="filter1_d_1_108" x="40" y="27" width="41" height="48.3333" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <filter id="filter1_d_1_108" x="40" y="27" width="41" height="48.3333" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                     <feOffset dy="4" />
                     <feGaussianBlur stdDeviation="2" />
@@ -93,17 +96,8 @@ const App = () => {
                     <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_108" />
                     <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_108" result="shape" />
                   </filter>
-                  <radialGradient id="paint0_radial_1_108" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(61 35) rotate(-25.5297) scale(37.1248 30.3748)">
-                    <stop stop-color="#D9D9D9" />
-                    <stop offset="0.9999" stop-color="#D9D9D9" stop-opacity="0" />
-                    <stop offset="1" stop-color="#D9D9D9" stop-opacity="0" />
-                  </radialGradient>
                 </defs>
               </svg>
-
-
-
-
             </div>
           </div>
 
@@ -122,7 +116,6 @@ const App = () => {
               type="text"
               maxLength="20"
               placeholder="CARD HOLDER"
-
             />
             <div className="column-three">
               <input
