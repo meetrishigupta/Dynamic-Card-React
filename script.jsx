@@ -66,7 +66,44 @@ const App = () => {
                 <hr></hr>
                 <p>{cvvs}</p>
               </div>
-              <img src="secure.svg" />
+              <svg width="95" height="103" viewBox="0 0 95 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_1_108)">
+                  <g filter="url(#filter1_d_1_108)">
+                    <path d="M60.5 27L44 34.3333V45.3333C44 55.5083 51.04 65.0233 60.5 67.3333C69.96 65.0233 77 55.5083 77 45.3333V34.3333L60.5 27Z" fill="url(#paint0_radial_1_108)" shape-rendering="crispEdges" />
+                  </g>
+                </g>
+                <defs>
+                  <filter id="filter0_d_1_108" x="0" y="0" width="95" height="102.333" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dx="-13" dy="4" />
+                    <feGaussianBlur stdDeviation="15.5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.11 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_108" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_108" result="shape" />
+                  </filter>
+                  <filter id="filter1_d_1_108" x="40" y="27" width="41" height="48.3333" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_108" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_108" result="shape" />
+                  </filter>
+                  <radialGradient id="paint0_radial_1_108" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(61 35) rotate(-25.5297) scale(37.1248 30.3748)">
+                    <stop stop-color="#D9D9D9" />
+                    <stop offset="0.9999" stop-color="#D9D9D9" stop-opacity="0" />
+                    <stop offset="1" stop-color="#D9D9D9" stop-opacity="0" />
+                  </radialGradient>
+                </defs>
+              </svg>
+
+
+
+
             </div>
           </div>
 

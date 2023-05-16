@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,900&display=swap');
 body {
   position: relative;
   background: whitesmoke;
@@ -51,6 +51,7 @@ h1 {
   border-radius: 9px;
 }
 
+
 .card2 {
   margin-top: -8%;
   width: 346px;
@@ -92,14 +93,20 @@ button {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
+  font-weight: bold;
+
   color: #ffffff;
   border-radius: 9px;
   margin: 0 auto;
-  width: 180px;
+  width: 150px;
   border: none;
   height: 50px;
   /* card gradiet */
   background: linear-gradient(95.39deg, #ff9419 35.64%, #ea1fbd 115.87%);
+}
+button:hover{
+  cursor: pointer;
+  background: linear-gradient(87deg, #ea1fbd -21%, #ff9419 85.87%);
 }
 
 .column-three {
@@ -151,6 +158,7 @@ input::-webkit-inner-spin-button {
   text-align: left;
   font-family: "Roboto", sans-serif;
   color: white;
+  letter-spacing: 0.03em;
   font-size: 17px;
 }
 
@@ -200,25 +208,19 @@ input::-webkit-inner-spin-button {
   font-size: 32px;
 }
 
-.strip {
-  position: relative;
-  width: 346px;
-  height: 42px;
-  top: 32px;
-  background: #bebebe;
-}
+
 
 .strip {
   position: relative;
   width: 346px;
   height: 42px;
   top: 32px;
-  background: #bebebe;
+  background: #444444;
 }
 
 .cvv-strip {
   position: relative;
-  width: 150px;
+  width: 130px;
   height: 40px;
   left: 55px;
   top: 45px;
@@ -226,9 +228,9 @@ input::-webkit-inner-spin-button {
 }
 
 .cvv-strip hr {
-  width: 90px;
+  width: 80px;
   position: relative;
-  right: 28px;
+  right: 23px;
   top: 6.5px;
   border: 2px solid #ead4b2;
 }
@@ -238,13 +240,13 @@ input::-webkit-inner-spin-button {
   font-family: "Roboto";
   font-style: italic;
   font-weight: 400;
-  font-size: 18px;
-  top: -33px;
-  left: 105px;
+  font-size: 15px;
+  top: -29px;
+  left: 90px;
   line-height: 19px;
-  /* identical to box height */
-  color: #232323;
+  color: #5e5e5e;
 }
+
 
 .card2 img {
   position: relative;
@@ -260,4 +262,9 @@ input::-webkit-inner-spin-button {
 
 #card-name {
   text-transform: uppercase;
+}
+svg{
+  left: 253px;
+  position: relative;
+  top: 22px;
 }
