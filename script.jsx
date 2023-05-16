@@ -1,3 +1,5 @@
+
+
 let cnumber = "---- ---- ---- ----";
 let cholder = "YOUR NAME";
 let cmonth = "MM";
@@ -78,12 +80,14 @@ const App = () => {
               value={cnumber}
             />
             <input
+             pattern="[A-Z]*"
               id="card-name"
               onInput={handleName}
               type="text"
               maxLength="20"
               placeholder="CARD HOLDER"
-              value={cholder}
+             
+
             />
             <div className="column-three">
               <input
