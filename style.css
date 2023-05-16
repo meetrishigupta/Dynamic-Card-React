@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,900&display=swap');
+
 body {
   position: relative;
   background: whitesmoke;
@@ -43,10 +44,10 @@ h1 {
 }
 
 .card1 {
-  margin-top: -8%;
+  position: relative;
   width: 346px;
   height: 195px;
-  top: 158px;
+  top: -73px;
   background: linear-gradient(95.39deg, #ff9419 35.64%, #ea1fbd 115.87%);
   border-radius: 9px;
 }
@@ -104,7 +105,8 @@ button {
   /* card gradiet */
   background: linear-gradient(95.39deg, #ff9419 35.64%, #ea1fbd 115.87%);
 }
-button:hover{
+
+button:hover {
   cursor: pointer;
   background: linear-gradient(87deg, #ea1fbd -21%, #ff9419 85.87%);
 }
@@ -176,7 +178,7 @@ input::-webkit-inner-spin-button {
 .valid {
   display: inline-block;
   position: relative;
-  top: -85px;
+  top: -69px;
   left: 20px;
   text-align: left;
   font-family: "Roboto", sans-serif;
@@ -187,7 +189,7 @@ input::-webkit-inner-spin-button {
 .valid-year {
   display: inline-block;
   position: relative;
-  top: -88px;
+  top: -71px;
   left: 25px;
   text-align: left;
   font-family: "Roboto", sans-serif;
@@ -197,15 +199,16 @@ input::-webkit-inner-spin-button {
 
 .visa {
   display: inline-block;
-  position: relative;
-  top: -87px;
-  left: 151px;
+  position: absolute;
+  bottom: -24px;
+  /* top: -87px; */
+  right: 14px;
   font-weight: 800;
   font-style: italic;
   text-align: left;
+  font-size: 33px;
   font-family: "Roboto", sans-serif;
   color: white;
-  font-size: 32px;
 }
 
 
@@ -263,7 +266,8 @@ input::-webkit-inner-spin-button {
 #card-name {
   text-transform: uppercase;
 }
-svg{
+
+svg {
   left: 253px;
   position: relative;
   top: 22px;
