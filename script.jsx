@@ -4,7 +4,7 @@ let cnumber = "---- ---- ---- ----";
 let cholder = "YOUR NAME";
 let cmonth = "MM";
 let cyear = "YY";
-let cvvs ="CVV";
+let cvvs = "CVV";
 
 const handleNumber = (e) => {
   const inputValue = e.target.value;
@@ -80,13 +80,11 @@ const App = () => {
               value={cnumber}
             />
             <input
-             pattern="[A-Z]*"
               id="card-name"
               onInput={handleName}
               type="text"
               maxLength="20"
               placeholder="CARD HOLDER"
-             
 
             />
             <div className="column-three">
